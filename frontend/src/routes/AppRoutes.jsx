@@ -10,9 +10,9 @@ import Contact from "../pages/Contact";
 function AppRoutes() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col bg-slate-950 text-white">
+      <div className="min-h-screen flex flex-col bg-[#f8fbff] text-slate-800">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow w-full">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

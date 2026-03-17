@@ -20,7 +20,7 @@ function Services() {
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-20">
-      <h2 className="mb-10 text-4xl font-bold text-white">Services</h2>
+      <h2 className="mb-10 text-4xl font-bold text-[#1f3a93]">Services</h2>
 
       <div className="grid gap-6 md:grid-cols-2">
         {services.map((service, index) => (

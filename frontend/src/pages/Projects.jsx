@@ -16,7 +16,7 @@ function Projects() {
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-20">
-      <h2 className="mb-10 text-4xl font-bold text-white">Projects</h2>
+      <h2 className="mb-10 text-4xl font-bold text-[#1f3a93]">Projects</h2>
 
       <div className="grid gap-6 md:grid-cols-3">
         {projects.map((project, index) => (
