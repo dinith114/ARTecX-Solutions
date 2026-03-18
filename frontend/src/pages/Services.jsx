@@ -19,21 +19,27 @@ function Services() {
   ];
 
   return (
-    <section className="mx-auto max-w-7xl px-6 py-20">
-      <h2 className="mb-10 text-4xl font-bold text-[#1f3a93]">Services</h2>
+    <section className="w-full bg-[#f8fbff] py-16 sm:py-20 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <h2 className="mb-10 text-3xl font-bold text-[#1f3a93] sm:text-4xl">
+          Services
+        </h2>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg"
-          >
-            <h3 className="mb-3 text-2xl font-semibold text-cyan-400">
-              {service.title}
-            </h3>
-            <p className="text-slate-300 leading-7">{service.description}</p>
-          </div>
-        ))}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="rounded-2xl bg-[#0f1d46] p-6 shadow-lg"
+            >
+              <h3 className="mb-3 text-2xl font-semibold text-[#2f80ed]">
+                {service.title}
+              </h3>
+              <p className="text-base leading-7 text-white">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
