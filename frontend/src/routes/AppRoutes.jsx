@@ -14,7 +14,7 @@ function LayoutWrapper() {
   const isAdminRoute = location.pathname.startsWith("/admin");
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f8fbff] text-slate-800">
+    <div className="min-h-screen flex flex-col text-slate-800 dark:text-slate-100">
       {!isAdminRoute && <Navbar />}
 
       <main className="flex-grow w-full">

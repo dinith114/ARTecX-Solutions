@@ -40,7 +40,7 @@ function AdminLogin() {
   };
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#f4f8fc] px-4">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#f4f8fc] px-4 transition-colors duration-300 dark:bg-slate-950">
       {/* Watermark background */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <img
@@ -50,17 +50,17 @@ function AdminLogin() {
         />
       </div>
 
-      <div className="relative z-10 w-full max-w-md rounded-3xl border border-slate-200 bg-white/95 p-8 shadow-xl backdrop-blur-sm">
+      <div className="relative z-10 w-full max-w-md rounded-3xl border border-slate-200 bg-white/95 p-8 shadow-xl backdrop-blur-sm transition duration-300 dark:border-slate-800 dark:bg-slate-900/95">
         <div className="mb-6 flex flex-col items-center">
           <img src={logo} alt="ARTeCX logo" className="mb-4 h-20 w-20 object-contain" />
-          <h2 className="text-center text-3xl font-bold text-[#1f3a93]">
+          <h2 className="text-center text-3xl font-bold text-[#1f3a93] dark:text-white">
             Admin Login
           </h2>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="mb-2 block text-sm font-semibold text-slate-700">
+            <label className="mb-2 block text-sm font-semibold text-slate-700 dark:text-slate-200">
               Email
             </label>
             <input
@@ -68,7 +68,7 @@ function AdminLogin() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 outline-none focus:border-[#2f80ed] focus:ring-2 focus:ring-blue-100"
+              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 outline-none transition focus:border-[#2f80ed] focus:ring-2 focus:ring-blue-100 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
               placeholder="Enter admin email"
             />
           </div>
@@ -82,7 +82,7 @@ function AdminLogin() {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 outline-none focus:border-[#2f80ed] focus:ring-2 focus:ring-blue-100"
+              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 outline-none transition focus:border-[#2f80ed] focus:ring-2 focus:ring-blue-100 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
               placeholder="Enter password"
             />
           </div>
@@ -90,7 +90,7 @@ function AdminLogin() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full rounded-xl bg-[#1f3a93] px-6 py-3 font-semibold text-white transition hover:bg-[#2f80ed] disabled:opacity-70"
+            className="w-full rounded-xl bg-[#1f3a93] px-6 py-3 font-semibold text-white transition duration-300 hover:scale-[1.02] hover:bg-[#2f80ed] disabled:cursor-not-allowed disabled:opacity-70"
           >
             {isSubmitting ? "Logging in..." : "Login"}
           </button>
