@@ -1,20 +1,25 @@
 import PageWrapper from "../components/common/PageWrapper";
+import HomeHeroSlider from "../components/common/HeroSlider";
+import TestimonialsSection from "../components/common/TestimonialsSection";
+import TechStackMarquee from "../components/common/TechStackMarquee";
 
 function Home() {
   return (
     <PageWrapper>
-      <section className="w-full min-h-[calc(100vh-140px)] bg-[#f8fbff] py-16 transition-colors duration-300 dark:bg-slate-950 sm:py-20 md:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="max-w-3xl">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-[#2f80ed] dark:text-blue-400 sm:text-sm sm:tracking-[0.3em]">
+      <HomeHeroSlider />
+
+      <section className="bg-[#f8fbff] py-20 transition-colors duration-300 dark:bg-slate-950">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="max-w-4xl">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-blue-500">
               Innovative Digital Solutions
             </p>
 
-            <h1 className="mb-6 text-3xl font-bold leading-tight text-[#1f3a93] dark:text-white sm:text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="mb-6 text-4xl font-bold leading-tight text-[#1f3a93] dark:text-white sm:text-5xl lg:text-6xl">
               Building scalable software experiences for modern businesses
-            </h1>
+            </h2>
 
-            <p className="text-base leading-7 text-slate-700 dark:text-slate-300 sm:text-lg sm:leading-8">
+            <p className="text-lg leading-9 text-slate-700 dark:text-slate-300">
               ARTeCX Solutions delivers modern web, backend, and product engineering
               services focused on performance, reliability, and business growth.
             </p>
@@ -37,6 +42,9 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <TestimonialsSection />
+      <TechStackMarquee />
     </PageWrapper>
   );
 }

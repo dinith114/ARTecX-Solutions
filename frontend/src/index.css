@@ -40,3 +40,16 @@ body {
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out;
 }
+
+@keyframes techScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-marquee {
+  animation: techScroll 22s linear infinite;
+}
